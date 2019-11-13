@@ -30,7 +30,7 @@ public class TitlePlayer1_13_R1 implements ITitle {
 
         final Packet timePacket = new PacketPlayOutTitle(fadeIn, showTime, fadeOut);
         final Packet titlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.TITLE, chatTitle);
-        final Packet subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, chatTitle);
+        final Packet subTitlePacket = new PacketPlayOutTitle(PacketPlayOutTitle.EnumTitleAction.SUBTITLE, chatSubTitle);
 
         entityPlayer.playerConnection.sendPacket(titlePacket);
         entityPlayer.playerConnection.sendPacket(subTitlePacket);
