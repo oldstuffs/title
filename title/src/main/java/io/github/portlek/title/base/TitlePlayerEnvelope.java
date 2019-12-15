@@ -9,6 +9,7 @@ import io.github.portlek.title.nms.v1_12_R1.TitlePlayer1_12_R1;
 import io.github.portlek.title.nms.v1_13_R1.TitlePlayer1_13_R1;
 import io.github.portlek.title.nms.v1_13_R2.TitlePlayer1_13_R2;
 import io.github.portlek.title.nms.v1_14_R1.TitlePlayer1_14_R1;
+import io.github.portlek.title.nms.v1_15_R1.TitlePlayer1_15_R1;
 import io.github.portlek.title.nms.v1_8_R1.TitlePlayer1_8_R1;
 import io.github.portlek.title.nms.v1_8_R2.TitlePlayer1_8_R2;
 import io.github.portlek.title.nms.v1_8_R3.TitlePlayer1_8_R3;
@@ -26,6 +27,7 @@ public abstract class TitlePlayerEnvelope implements TitlePlayer {
     TitlePlayerEnvelope(@NotNull final Player player) {
         this.title = new VersionMatched<>(
             new MckTitle(),
+            TitlePlayer1_15_R1.class,
             TitlePlayer1_14_R1.class,
             TitlePlayer1_13_R2.class,
             TitlePlayer1_13_R1.class,
